@@ -1,14 +1,14 @@
-# Helm Chart Repository - davidhellinga/charts
+# Helm Chart Repository - Groep2Rekeningrijden/charts
 
 This Helm Chart repository, hosted
-at [https://davidhellinga.github.io/charts/](https://davidhellinga.github.io/charts/), is dedicated to storing and
-managing Helm charts for the school project Kwetter.
+at [https://groep2rekeningrijden.github.io/charts/](https://groep2rekeningrijden.github.io/charts/), is dedicated to storing and
+managing Helm charts for the school project Rekeningrijden.
 
 ## Description
 
-[Kwetter](https://dev.azure.com/OIBSS-F/Kwetter/) is a social media platform developed as a school project. This
-repository serves as the central location to store and distribute Helm charts for Kwetter. Helm charts provide an
-efficient and reproducible way to package, deploy, and manage Kubernetes applications.
+[Rekeningrijden](https://dev.azure.com/FontysVerkeer/Rekeningrijden) is a road pricing platform developed as a school
+project. Thisrepository serves as the central location to store and distribute Helm charts for Rekeningrijden. Helm
+charts provide an efficient and reproducible way to package, deploy, and manage Kubernetes applications.
 
 ## Usage
 
@@ -55,7 +55,7 @@ To maintain this Helm Chart repository and add new charts, follow these steps:
 2. Index the repository:
 
    ```shell
-   helm repo index --url https://davidhellinga.github.io/charts/ --merge index.yaml .
+   helm repo index --url https://groep2rekeningrijden.github.io/charts/ --merge index.yaml .
    ```
 
 3. Commit and push the updated repository files:
@@ -68,9 +68,8 @@ To maintain this Helm Chart repository and add new charts, follow these steps:
 
 4. The chart will be available for others to use after the repository is updated.
 
-
 ## Issues and Contributions
 
 If you encounter any issues with the charts or have suggestions for improvement, please open an issue on
-the [GitHub repository](https://github.com/davidhellinga/charts). Contributions, such as bug fixes or new charts, are
+the [GitHub repository](https://github.com/Groep2Rekeningrijden/charts). Contributions, such as bug fixes or new charts, are
 highly welcome.
