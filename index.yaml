@@ -3,7 +3,17 @@ entries:
   car-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-31T16:22:45.61058434+02:00"
+    created: "2023-05-31T16:24:43.027942207+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 36194ceb43faac5a859977e692476becfcc84fec5272cc2377f2f93dcae05f16
+    name: car-service
+    type: application
+    urls:
+    - https://groep2rekeningrijden.github.io/charts/docs/car-service-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-05-31T16:24:43.027570222+02:00"
     description: A Helm chart for Kubernetes
     digest: f20ba2cf19b739fc555fa02bda409d1c3d5d1477080d95ff1a2d046da3188035
     name: car-service
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://groep2rekeningrijden.github.io/charts/docs/car-service-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-31T16:22:45.608672245+02:00"
+generated: "2023-05-31T16:24:43.02707266+02:00"
