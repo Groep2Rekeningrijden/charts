@@ -9,8 +9,8 @@ metadata:
   name: car-db
 spec:
   ports:
-    - name: "11001"
-      port: 11001
+    - name: "5432"
+      port: 5432
       targetPort: 5432
   selector:
     io.kompose.service: car-db
