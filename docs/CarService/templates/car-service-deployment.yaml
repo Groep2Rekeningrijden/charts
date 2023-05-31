@@ -4,7 +4,6 @@ metadata:
   annotations:
     kompose.cmd: kompose convert -c
     kompose.version: 1.28.0 (c4137012e)
-  creationTimestamp: null
   labels:
     io.kompose.service: car-service
   name: car-service
@@ -19,7 +18,6 @@ spec:
       annotations:
         kompose.cmd: kompose convert -c
         kompose.version: 1.28.0 (c4137012e)
-      creationTimestamp: null
       labels:
         io.kompose.network/carservice-default: "true"
         io.kompose.service: car-service
@@ -31,4 +29,3 @@ spec:
             - containerPort: 80
           resources: {}
       restartPolicy: Always
-status: {}

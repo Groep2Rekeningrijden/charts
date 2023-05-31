@@ -1,7 +1,8 @@
 # Helm Chart Repository - Groep2Rekeningrijden/charts
 
 This Helm Chart repository, hosted
-at [https://groep2rekeningrijden.github.io/charts/](https://groep2rekeningrijden.github.io/charts/), is dedicated to storing and
+at [https://groep2rekeningrijden.github.io/charts/](https://groep2rekeningrijden.github.io/charts/), is dedicated to
+storing and
 managing Helm charts for the school project Rekeningrijden.
 
 ## Description
@@ -71,5 +72,6 @@ To maintain this Helm Chart repository and add new charts, follow these steps:
 ## Issues and Contributions
 
 If you encounter any issues with the charts or have suggestions for improvement, please open an issue on
-the [GitHub repository](https://github.com/Groep2Rekeningrijden/charts). Contributions, such as bug fixes or new charts, are
+the [GitHub repository](https://github.com/Groep2Rekeningrijden/charts). Contributions, such as bug fixes or new charts,
+are
 highly welcome.
