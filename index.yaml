@@ -3,7 +3,7 @@ entries:
   car-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-31T20:32:36.008370617+02:00"
+    created: "2023-05-31T21:20:39.163182155+02:00"
     description: A Helm chart for Kubernetes
     digest: 36194ceb43faac5a859977e692476becfcc84fec5272cc2377f2f93dcae05f16
     name: car-service
@@ -14,7 +14,7 @@ entries:
   coordinate-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-31T20:32:36.008809467+02:00"
+    created: "2023-05-31T21:20:39.164436621+02:00"
     description: A Helm chart for Kubernetes
     digest: 9d7541fddacd339fa820a7806ac9dcd976bb82a8c8d4090bd20b449bbc9c1b72
     name: coordinate-service
@@ -22,10 +22,21 @@ entries:
     urls:
     - https://groep2rekeningrijden.github.io/charts/docs/coordinate-service-0.1.0.tgz
     version: 0.1.0
+  payment-service:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-05-31T21:20:39.164838741+02:00"
+    description: A Helm chart for Kubernetes
+    digest: b75a3b10f7d188c7b6d7d7fb737e3d25dd27759d973f663b33a46ace4aeb2c87
+    name: payment-service
+    type: application
+    urls:
+    - https://groep2rekeningrijden.github.io/charts/docs/payment-service-0.1.0.tgz
+    version: 0.1.0
   router-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-31T20:32:36.010108337+02:00"
+    created: "2023-05-31T21:20:39.16553542+02:00"
     description: A Helm chart for Kubernetes
     digest: 65284be1749dc3ced4e8cc82e189413b3ce5524e5ac17a23fa2b71c88d181f78
     name: router-api
@@ -35,7 +46,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-31T20:32:36.009218941+02:00"
+    created: "2023-05-31T21:20:39.165190505+02:00"
     description: A Helm chart for Kubernetes
     digest: 5379763cb6c54d6a6a10ce60f9a31d8032d88d3bca50e03c59a97181c0711c41
     name: router-api
@@ -43,4 +54,4 @@ entries:
     urls:
     - https://groep2rekeningrijden.github.io/charts/docs/router-api-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-31T20:32:36.007785696+02:00"
+generated: "2023-05-31T21:20:39.162596719+02:00"
