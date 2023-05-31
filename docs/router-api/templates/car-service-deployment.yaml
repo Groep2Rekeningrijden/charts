@@ -5,13 +5,13 @@ metadata:
     kompose.cmd: kompose convert -c -f docker-compose.yml -o router-api
     kompose.version: 1.28.0 (c4137012e)
   labels:
-    io.kompose.service: car-service
-  name: car-service
+    io.kompose.service: router-api
+  name: router-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: car-service
+      io.kompose.service: router-api
   strategy: {}
   template:
     metadata:
@@ -19,11 +19,11 @@ spec:
         kompose.cmd: kompose convert -c -f docker-compose.yml -o router-api
         kompose.version: 1.28.0 (c4137012e)
       labels:
-        io.kompose.service: car-service
+        io.kompose.service: router-api
     spec:
       containers:
         - image: fontyssa/router-api
-          name: car-service
+          name: router-api
           ports:
             - containerPort: 80
           resources: {}
