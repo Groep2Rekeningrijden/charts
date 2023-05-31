@@ -1,24 +1,3 @@
 apiVersion: v1
-entries:
-  car-service:
-  - apiVersion: v1
-    created: "2023-05-31T15:47:43.412483063+02:00"
-    description: A generated Helm Chart for CarService from Skippbox Kompose
-    digest: 7860a7ad803c358b9257f703b2f666c59ecbc543c42334591a3d65176fdfa9c1
-    keywords:
-    - CarService
-    name: car-service
-    urls:
-    - https://groep2rekeningrijden.github.io/charts/docs/car-service-0.0.4.tgz
-    version: 0.0.4
-  - apiVersion: v1
-    created: "2023-05-31T15:47:43.411933888+02:00"
-    description: A generated Helm Chart for CarService from Skippbox Kompose
-    digest: 403579bcebe13f6b572bb3d15a7571dbed7a28cce56748dd72c7c4e0f42cbba8
-    keywords:
-    - CarService
-    name: car-service
-    urls:
-    - https://groep2rekeningrijden.github.io/charts/docs/car-service-0.0.3.tgz
-    version: 0.0.3
-generated: "2023-05-31T15:47:43.411300937+02:00"
+entries: {}
+generated: "2023-05-31T16:16:26.876328627+02:00"
