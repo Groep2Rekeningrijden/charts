@@ -74,7 +74,7 @@ To maintain this Helm Chart repository and add new charts, follow these steps:
 Use [kompose](https://kompose.io/) to generate charts from a docker compose file.
 
 ```shell
-kompose convert -c -f docker-compose.yml
+kompose convert -c -f docker-compose.yml -o <service-name>
 ```
 
 Then use helm to initialize the chart
