@@ -50,7 +50,7 @@ To maintain this Helm Chart repository and add new charts, follow these steps:
 1. Package your chart:
 
    ```shell
-   helm package <chart-directory>
+   helm package docs/<chart-directory> -d docs/
    ```
 
 2. Index the repository:
@@ -68,6 +68,26 @@ To maintain this Helm Chart repository and add new charts, follow these steps:
    ```
 
 4. The chart will be available for others to use after the repository is updated.
+
+## Generating Charts
+
+Use [kompose](https://kompose.io/) to generate charts from a docker compose file.
+
+```shell
+kompose convert -c -f docker-compose.yml
+```
+
+Then use helm to initialize the chart
+
+```shell
+helm create <chart-name>
+```
+
+And either:
+- [fast] replace the content of the templates folder with the generated ones, keeping the `ingress.yaml` and configuring that via `values.yaml`
+- [best] take the time to add all the content of the kompose generated files to `values.yaml` and to the templates, adding any addition services as is or with replacements
+
+Then, see [Maintaining the Repository](#maintaining-the-repository)
 
 ## Issues and Contributions
 
