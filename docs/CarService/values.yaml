@@ -43,8 +43,7 @@ ingress:
   hosts:
     - host: car.kind.cluster
       paths:
-        - path: /
-          pathType: Prefix
+        - path: /(.*)
           backend:
             service:
               name: car-service
