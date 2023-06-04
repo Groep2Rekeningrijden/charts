@@ -20,6 +20,9 @@ spec:
         kompose.cmd: kompose convert -c -f docker-compose.yml -o payment-service
         kompose.version: 1.28.0 (c4137012e)
       labels:
+        org: routing-system
+        class: paymentmysql
+        app.kubernetes.io/name: paymentmysql
         io.kompose.service: paymentmysql
     spec:
       containers:

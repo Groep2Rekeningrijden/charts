@@ -24,6 +24,9 @@ spec:
         {{- toYaml . | nindent 8 }}
         {{- end }}
       labels:
+        org: routing-system
+        class: car-service
+        app.kubernetes.io/name: car-service
         io.kompose.network/carservice-default: "true"
         io.kompose.service: car-service
     spec:

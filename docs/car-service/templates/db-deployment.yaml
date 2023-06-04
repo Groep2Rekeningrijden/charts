@@ -20,6 +20,9 @@ spec:
         kompose.cmd: kompose convert -c
         kompose.version: 1.28.0 (c4137012e)
       labels:
+        org: routing-system
+        class: car-db
+        app.kubernetes.io/name: car-db
         io.kompose.service: car-db
     spec:
       containers:
