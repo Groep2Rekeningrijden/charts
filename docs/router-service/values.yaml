@@ -1,12 +1,30 @@
-# Default values for router-api.
+# Default values for router-service.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 1
 
-imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
+region:
+  # Can be PLACE with place name or BBOX with dict {south: a, west: b, north: c, east: d}
+  # Example PLACE 'Brussels, Belgium'
+  # Example BBOX {south: 51.075920, west: 3.180542, north: 51.522416, east: 5.907898}
+  type: PLACE
+  area: Brussels, Belgium
+serviceUri:
+  car: http://car-service/vehicle
+  payment: http://payment-service/getPrices
+masstransit:
+  input: Coordinate_Service.DTOs:PublishCoordinatesDTO
+  output: LTS.DTOs:RouteDTO
+rabbitmq:
+  host: rabbitmq
+  port: 5672
+  user: guest
+  password: guest
+  queue: py-router
+  virtualHost: /
+
+
+replicaCount: 1
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -30,10 +48,6 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
-service:
-  type: ClusterIP
-  port: 80
-
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
@@ -49,7 +63,7 @@ resources: {}
 autoscaling:
   enabled: true
   minReplicas: 1
-  maxReplicas: 3
+  maxReplicas: 5
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 

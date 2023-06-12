@@ -34,26 +34,6 @@ service:
   type: ClusterIP
   port: 80
 
-ingress:
-  enabled: true
-  className: "nginx"
-  annotations:
-    cert-manager.io/cluster-issuer: ca-issuer
-  hosts:
-    - host: payment.kind.cluster
-      paths:
-        - path: /
-          pathType: Prefix
-          backend:
-            service:
-              name: phpmyadmin
-              port:
-                number: 80
-  tls:
-    - secretName: payment.kind.cluster
-      hosts:
-        - payment.kind.cluster
-
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
