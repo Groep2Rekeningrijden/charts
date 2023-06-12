@@ -36,7 +36,6 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           image: fontyssa/car-service
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           ports:
