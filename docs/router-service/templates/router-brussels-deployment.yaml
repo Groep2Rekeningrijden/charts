@@ -5,13 +5,13 @@ metadata:
     kompose.cmd: kompose convert -c -f docker-compose.yml -o router-service
     kompose.version: 1.28.0 (c4137012e)
   labels:
-    io.kompose.service: {{ include "router-service.fullname" . }}
-  name: {{ include "router-service.fullname" . }}
+    io.kompose.service: router-service
+  name: router-service
 spec:
   replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: {{ include "router-service.fullname" . }}
+      io.kompose.service: router-service
   strategy:
     type: Recreate
   template:
@@ -20,7 +20,7 @@ spec:
         kompose.cmd: kompose convert -c -f docker-compose.yml -o router-service
         kompose.version: 1.28.0 (c4137012e)
       labels:
-        io.kompose.service: {{ include "router-service.fullname" . }}
+        io.kompose.service: router-service
     spec:
       containers:
         - env:
@@ -53,7 +53,7 @@ spec:
             - name: LOG_LEVEL
               value: ERROR
           image: fontyssa/router-service
-          name: {{ include "router-service.fullname" . }}
+          name: router-service
           resources: { }
           volumeMounts:
             - mountPath: /osmnx-cache
