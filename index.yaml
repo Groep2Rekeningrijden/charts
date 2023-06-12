@@ -3,40 +3,20 @@ entries:
   car-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.46004363+02:00"
+    created: "2023-06-12T22:41:09.530049181+02:00"
     description: A Helm chart for Kubernetes
-    digest: c957e3dfb94e809f4c2a788e77536cdc7fcb2e1822c15bb84df0ae6c592164fd
+    digest: a5bcb16879e2f0e8638857603c046845e344971079cabb136ef77d00faf98309
     name: car-service
     type: application
     urls:
     - https://groep2rekeningrijden.github.io/charts/docs/car-service-0.1.3.tgz
     version: 0.1.3
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.459719254+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 917960dff739115ec5443705cf408fd436d90e957c051e90e0697ce12666c53e
-    name: car-service
-    type: application
-    urls:
-    - https://groep2rekeningrijden.github.io/charts/docs/car-service-0.1.2.tgz
-    version: 0.1.2
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.459393388+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 3b53ab5c01a7359308a5b1cb16d85ccc7fcd187dee4c337d77b01eeb64924d8d
-    name: car-service
-    type: application
-    urls:
-    - https://groep2rekeningrijden.github.io/charts/docs/car-service-0.1.1.tgz
-    version: 0.1.1
   coordinate-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.460363784+02:00"
+    created: "2023-06-12T22:41:09.530249077+02:00"
     description: A Helm chart for Kubernetes
-    digest: d9dc2feaa6abd6d3232bdbc306ec3b82c566ac29d1ecb1caf05fdbd485d812fd
+    digest: 15ddeea3055da19d106cff8fb2437679a1279fbf91a52febf8ca903ab294f3a8
     name: coordinate-service
     type: application
     urls:
@@ -45,9 +25,9 @@ entries:
   data-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.460664299+02:00"
+    created: "2023-06-12T22:41:09.530428323+02:00"
     description: Data Service for Rekeningrijden
-    digest: 45698a47443d5f3e2067e2bbdb95efd35e05bca4a9c9543f322971ac6ef43705
+    digest: a1143c433b9f045c90b248ae91b36e0317378231fce8ac129e60b381056e00a9
     name: data-service
     type: application
     urls:
@@ -56,9 +36,9 @@ entries:
   international-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.460937773+02:00"
+    created: "2023-06-12T22:41:09.530593655+02:00"
     description: International API for Rekeningrijden
-    digest: d21e3ccf8bb856300b8d56a470a15d184b7ac92b7ce1f2518106fe5a4be5e1ed
+    digest: 6ae77f1d6a9d9bc8bde46f548abab325bd7bdd7031fa100f0c759df086da1219
     name: international-api
     type: application
     urls:
@@ -67,30 +47,20 @@ entries:
   payment-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.461694668+02:00"
+    created: "2023-06-12T22:41:09.530792299+02:00"
     description: Payment service for Rekeningrijden
-    digest: c21198b0cc570de00934eb488574e1471b2904dbeb5e2f0946eeb9b641a70daf
+    digest: c3cae2fb2c86a3a042c3a30d52ea679c0d5df383451e38a1ce89c2903a0b4db0
     name: payment-service
     type: application
     urls:
     - https://groep2rekeningrijden.github.io/charts/docs/payment-service-0.1.2.tgz
     version: 0.1.2
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.461358866+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 426e1e91042e71a996a4758643788e824cc61cfcdb9a55b742e4c541ff911638
-    name: payment-service
-    type: application
-    urls:
-    - https://groep2rekeningrijden.github.io/charts/docs/payment-service-0.1.1.tgz
-    version: 0.1.1
   rekeningrijden:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.461969362+02:00"
+    created: "2023-06-12T22:41:09.530944488+02:00"
     description: Rekeningrijden webapp for, you guessed it, rekeningrijden
-    digest: 37ecca8ccc0e432a4850c1ee992dc0e8f80217e7f35da8209e1bb03d99013fc4
+    digest: 4f228c50362ecdd435022133ed4983d16f5c5a013b8f8aaf5324151ca57fb2e1
     name: rekeningrijden
     type: application
     urls:
@@ -99,33 +69,23 @@ entries:
   router-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.46266078+02:00"
+    created: "2023-06-12T22:41:09.531104643+02:00"
     description: Router api for rekeningrijden.
-    digest: 615a2b62a03fe8db7b0c6ffa57f40bf0e15d6445b70d2a0a1ff79c60f687ebb9
+    digest: afef45a0eb81dbc8d7ea8942f4cd0d78c329fd6eeb1378fe11ced8f9d248888e
     name: router-api
     type: application
     urls:
     - https://groep2rekeningrijden.github.io/charts/docs/router-api-0.1.2.tgz
     version: 0.1.2
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.462373737+02:00"
-    description: A Helm chart for Kubernetes
-    digest: e24a740253c42a414e1e72247e957c3f310d1807aab0b8a6ec7bdf92822e4863
-    name: router-api
-    type: application
-    urls:
-    - https://groep2rekeningrijden.github.io/charts/docs/router-api-0.1.1.tgz
-    version: 0.1.1
   router-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-12T22:29:27.462986219+02:00"
+    created: "2023-06-12T22:41:09.531310944+02:00"
     description: The Router Service for Rekeningrijden
-    digest: d27888d6742c42397927b4ea959cdc2c2e98f6c9cfe2e5d42f9137189010d325
+    digest: f70df3e82cc88c2afaeee8d5b3f0dd497bc1c03bf68131078ee6544970f62ff7
     name: router-service
     type: application
     urls:
     - https://groep2rekeningrijden.github.io/charts/docs/router-service-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-12T22:29:27.458801927+02:00"
+generated: "2023-06-12T22:41:09.529767729+02:00"
