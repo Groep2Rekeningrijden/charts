@@ -2,25 +2,25 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    kompose.cmd: kompose convert -c -f docker-compose.yml -o router-service
+    kompose.cmd: kompose convert -c -f docker-compose.yml -o {{.Values.serviceName}}
     kompose.version: 1.28.0 (c4137012e)
   labels:
-    io.kompose.service: router-service
-  name: router-service
+    io.kompose.service: {{.Values.serviceName}}
+  name: {{.Values.serviceName}}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: router-service
+      io.kompose.service: {{.Values.serviceName}}
   strategy:
     type: Recreate
   template:
     metadata:
       annotations:
-        kompose.cmd: kompose convert -c -f docker-compose.yml -o router-service
+        kompose.cmd: kompose convert -c -f docker-compose.yml -o {{.Values.serviceName}}
         kompose.version: 1.28.0 (c4137012e)
       labels:
-        io.kompose.service: router-service
+        io.kompose.service: {{.Values.serviceName}}
     spec:
       containers:
         - env:
@@ -52,14 +52,14 @@ spec:
               value: /osmnx-cache
             - name: LOG_LEVEL
               value: ERROR
-          image: fontyssa/router-service
-          name: router-service
+          image: fontyssa/{{.Values.serviceName}}
+          name: {{.Values.serviceName}}
           resources: { }
           volumeMounts:
             - mountPath: /osmnx-cache
-              name: osmnx-cache
+              name: {{.Values.serviceName}}-osmnx-cache
       restartPolicy: Always
       volumes:
-        - name: osmnx-cache
+        - name: {{.Values.serviceName}}-osmnx-cache
           persistentVolumeClaim:
-            claimName: osmnx-cache
+            claimName: {{.Values.serviceName}}-osmnx-cache

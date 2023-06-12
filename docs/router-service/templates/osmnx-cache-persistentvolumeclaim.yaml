@@ -2,8 +2,8 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   labels:
-    io.kompose.service: osmnx-cache
-  name: osmnx-cache
+    io.kompose.service: {{.Values.serviceName}}-osmnx-cache
+  name: {{.Values.serviceName}}-osmnx-cache
 spec:
   accessModes:
     - ReadWriteOnce

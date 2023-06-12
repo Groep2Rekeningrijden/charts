@@ -2,6 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+serviceName: router-service
 
 region:
   # Can be PLACE with place name or BBOX with dict {south: a, west: b, north: c, east: d}
