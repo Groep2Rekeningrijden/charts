@@ -6,7 +6,7 @@ metadata:
     kompose.version: 1.28.0 (c4137012e)
   labels:
     io.kompose.service: international-api
-  name: io.swagger
+  name: international-api
 spec:
   ports:
     - name: "5060"

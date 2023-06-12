@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - image: fontyssa/international-api
-          name: io.swagger
+          name: international-api
           ports:
             - containerPort: 80
           resources: {}
