@@ -41,6 +41,7 @@ spec:
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
               name: car-db
+              subPath: postgres-car-db
       restartPolicy: Always
       volumes:
         - name: car-db

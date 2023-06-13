@@ -18,7 +18,7 @@ masstransit:
   output: LTS.DTOs:RouteDTO
 rabbitmq:
   host: rabbitmq
-  port: 5672
+  port: "5672"
   user: guest
   password: guest
   queue: py-router
