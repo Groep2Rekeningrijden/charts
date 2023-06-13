@@ -9,8 +9,8 @@ metadata:
   name: data-service
 spec:
   ports:
-    - name: "5054"
-      port: 5054
+    - name: "80"
+      port: 80
       targetPort: 80
   selector:
     io.kompose.service: data-service

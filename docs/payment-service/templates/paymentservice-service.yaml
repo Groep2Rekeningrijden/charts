@@ -9,8 +9,8 @@ metadata:
   name: payment-service
 spec:
   ports:
-    - name: "5050"
-      port: 5050
+    - name: "80"
+      port: 80
       targetPort: 80
   selector:
     io.kompose.service: payment-service
