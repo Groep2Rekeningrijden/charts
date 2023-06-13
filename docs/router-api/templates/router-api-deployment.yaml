@@ -28,6 +28,6 @@ spec:
         - image: fontyssa/router-api
           name: router-api
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           resources: {}
       restartPolicy: Always
