@@ -52,7 +52,7 @@ spec:
               value: /osmnx-cache
             - name: LOG_LEVEL
               value: ERROR
-          image: fontyssa/{{.Values.serviceName}}
+          image: fontyssa/router-service
           name: {{.Values.serviceName}}
           resources: { }
           volumeMounts:
