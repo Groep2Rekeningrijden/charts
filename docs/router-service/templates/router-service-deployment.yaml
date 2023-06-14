@@ -29,13 +29,13 @@ spec:
             - name: REGION
               value: {{.Values.region.area}}
             - name: SOUTH
-              value: {{.Values.region.south}}
+              value: {{.Values.region.south | quote}}
             - name: WEST
-              value: {{.Values.region.west}}
+              value: {{.Values.region.west | quote}}
             - name: NORTH
-              value: {{.Values.region.north}}
+              value: {{.Values.region.north | quote}}
             - name: EAST
-              value: {{.Values.region.east}}
+              value: {{.Values.region.east | quote}}
             - name: CAR_SERVICE_URL
               value: {{.Values.serviceUri.car}}
             - name: PAYMENT_SERVICE_URL
@@ -47,7 +47,7 @@ spec:
             - name: RABBITMQ_HOST
               value: {{.Values.rabbitmq.host}}
             - name: RABBITMQ_PORT
-              value: {{.Values.rabbitmq.port}}
+              value: {{.Values.rabbitmq.port | quote}}
             - name: RABBITMQ_USERNAME
               value: {{.Values.rabbitmq.user}}
             - name: RABBITMQ_PASSWORD
