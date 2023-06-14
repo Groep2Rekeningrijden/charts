@@ -25,6 +25,6 @@ spec:
         - image: fontyssa/international-api
           name: international-api
           ports:
-            - containerPort: 8080
+            - containerPort: 80
           resources: {}
       restartPolicy: Always
