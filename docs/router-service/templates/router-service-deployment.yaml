@@ -28,6 +28,14 @@ spec:
               value: {{.Values.region.type}}
             - name: REGION
               value: {{.Values.region.area}}
+            - name: SOUTH
+              value: {{.Values.region.south}}
+            - name: WEST
+              value: {{.Values.region.west}}
+            - name: NORTH
+              value: {{.Values.region.north}}
+            - name: EAST
+              value: {{.Values.region.east}}
             - name: CAR_SERVICE_URL
               value: {{.Values.serviceUri.car}}
             - name: PAYMENT_SERVICE_URL
