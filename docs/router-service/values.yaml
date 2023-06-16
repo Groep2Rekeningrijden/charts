@@ -4,6 +4,8 @@
 
 serviceName: router-service
 
+# Options: debug, info, warning, error
+logLevel: error
 region:
   # Can be PLACE with place name or BBOX with dict {south: a, west: b, north: c, east: d}
   # Example PLACE 'Brussels, Belgium'
