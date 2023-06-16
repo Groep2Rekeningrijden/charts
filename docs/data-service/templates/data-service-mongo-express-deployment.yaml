@@ -29,5 +29,8 @@ spec:
           name: data-service-mongo-express
           ports:
             - containerPort: 8081
-          resources: {}
+          resources:
+            requests:
+              memory: {{.Values.resources.dbMemory}}
+              cpu: {{.Values.resources.dbCpu}}
       restartPolicy: Always

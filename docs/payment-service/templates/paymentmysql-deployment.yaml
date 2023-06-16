@@ -35,7 +35,10 @@ spec:
           name: paymentmysql
           ports:
             - containerPort: 3306
-          resources: {}
+          resources:
+            requests:
+              memory: {{.Values.resources.dbMemory}}
+              cpu: {{.Values.resources.dbCpu}}
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: mysql-data-paymentrr

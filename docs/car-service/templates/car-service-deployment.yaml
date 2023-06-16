@@ -42,7 +42,9 @@ spec:
               containerPort: {{ .Values.service.port }}
               protocol: TCP
           resources:
-            {{- toYaml .Values.resources | nindent 12 }}
+            requests:
+              memory: {{.Values.resources.memory}}
+              cpu: {{.Values.resources.cpu}}
       {{- with .Values.nodeSelector }}
       nodeSelector:
               {{- toYaml . | nindent 8 }}

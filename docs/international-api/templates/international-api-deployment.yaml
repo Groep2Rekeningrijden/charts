@@ -26,6 +26,9 @@ spec:
           name: international-api
           ports:
             - containerPort: 80
-          resources: {}
+          resources:
+            requests:
+              memory: {{.Values.resources.memory}}
+              cpu: {{.Values.resources.cpu}}
       restartPolicy: Always
       dnsPolicy: ClusterFirst

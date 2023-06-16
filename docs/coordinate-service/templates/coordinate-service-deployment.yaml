@@ -29,5 +29,8 @@ spec:
           name: coordinate-service
           ports:
             - containerPort: 8080
-          resources: {}
+          resources:
+            requests:
+              memory: {{.Values.resources.memory}}
+              cpu: {{.Values.resources.cpu}}
       restartPolicy: Always

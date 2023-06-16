@@ -39,7 +39,10 @@ spec:
           name: car-db
           ports:
             - containerPort: 5432
-          resources: {}
+          resources:
+            requests:
+              memory: {{.Values.resources.dbMemory}}
+              cpu: {{.Values.resources.dbCpu}}
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
               name: car-db

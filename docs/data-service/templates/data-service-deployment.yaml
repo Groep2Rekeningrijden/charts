@@ -26,5 +26,8 @@ spec:
           name: data-service
           ports:
             - containerPort: 80
-          resources: {}
+          resources:
+            requests:
+              memory: {{.Values.resources.memory}}
+              cpu: {{.Values.resources.cpu}}
       restartPolicy: Always
