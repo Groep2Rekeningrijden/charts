@@ -12,10 +12,10 @@ region:
   # Use area for PLACE such as Brussels
   area: "Brussels, Belgium"
   # Use s/w/n/e for BBOX
-  south: "49.483294"
-  west: "5.436859"
-  north: "50.344584"
-  east: "6.302032"
+  south: ""
+  west: ""
+  north: ""
+  east: ""
 serviceUri:
   car: http://car-service/vehicle
   payment: http://payment-service/getPrices
