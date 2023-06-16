@@ -31,3 +31,7 @@ rabbitmq:
   password: guest
   queue: py-router
   virtualHost: /
+
+resources:
+  memory: 2Gi
+  cpu: 500m

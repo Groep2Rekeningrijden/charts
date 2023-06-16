@@ -64,7 +64,10 @@ spec:
               value: "1"
           image: fontyssa/router-service
           name: {{.Values.serviceName}}
-          resources: { }
+          resources:
+            requests:
+              memory: {{.Values.resources.memory}}
+              cpu: {{.Values.resources.memory}}
           volumeMounts:
             - mountPath: /osmnx-cache
               name: {{.Values.serviceName}}-osmnx-cache
