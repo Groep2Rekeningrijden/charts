@@ -37,8 +37,8 @@ spec:
             - containerPort: 3306
           resources:
             requests:
-              memory: {{.Values.resources.dbMemory}}
-              cpu: {{.Values.resources.dbCpu}}
+              memory: {{.Values.resources.dbMemory | quote }}
+              cpu: {{.Values.resources.dbCpu | quote }}
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: mysql-data-paymentrr

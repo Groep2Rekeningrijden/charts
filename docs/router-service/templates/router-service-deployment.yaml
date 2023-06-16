@@ -66,8 +66,8 @@ spec:
           name: {{.Values.serviceName}}
           resources:
             requests:
-              memory: {{.Values.resources.memory}}
-              cpu: {{.Values.resources.cpu}}
+              memory: {{.Values.resources.memory | quote }}
+              cpu: {{.Values.resources.cpu | quote }}
           volumeMounts:
             - mountPath: /osmnx-cache
               name: {{.Values.serviceName}}-osmnx-cache

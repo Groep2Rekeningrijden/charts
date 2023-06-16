@@ -28,6 +28,6 @@ spec:
             - containerPort: 80
           resources:
             requests:
-              memory: {{.Values.resources.memory}}
-              cpu: {{.Values.resources.cpu}}
+              memory: {{.Values.resources.memory | quote }}
+              cpu: {{.Values.resources.cpu | quote }}
       restartPolicy: Always
