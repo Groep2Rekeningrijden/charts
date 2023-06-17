@@ -3,7 +3,7 @@ entries:
   car-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-16T15:32:51.816046539+02:00"
+    created: "2023-06-17T10:19:24.224488263+02:00"
     description: A Helm chart for Kubernetes
     digest: 495d865364ba51e577a6a8580c20ab36494d10d9bf81886582f35b14664130a9
     name: car-service
@@ -14,7 +14,7 @@ entries:
   coordinate-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-16T15:32:51.816262858+02:00"
+    created: "2023-06-17T10:19:24.22469233+02:00"
     description: A Helm chart for Kubernetes
     digest: c8cde337034fbdfc167b282d7af20984e78763f8218e31e4f8ab19a830af901b
     name: coordinate-service
@@ -25,7 +25,7 @@ entries:
   data-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-16T15:32:51.81646147+02:00"
+    created: "2023-06-17T10:19:24.224877073+02:00"
     description: Data Service for Rekeningrijden
     digest: 4bcf15ab4e50565949ddc64bc89bbf3f3bac8c4fef59c497e7eec086bbb12d82
     name: data-service
@@ -46,7 +46,7 @@ entries:
   international-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-16T15:32:51.816646985+02:00"
+    created: "2023-06-17T10:19:24.225042706+02:00"
     description: International API for Rekeningrijden
     digest: 1a2109185886ab3c07f0de5ae82b4c02130c3c1f0a2fc672e4cab424cddfa770
     name: international-api
@@ -87,7 +87,7 @@ entries:
   payment-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-16T15:32:51.816865838+02:00"
+    created: "2023-06-17T10:19:24.225261263+02:00"
     description: Payment service for Rekeningrijden
     digest: 96c854706a47173ae6750533f6d31e1f852988931110497f0886dffb8a177891
     name: payment-service
@@ -108,7 +108,7 @@ entries:
   rekeningrijden:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-16T15:32:51.817050311+02:00"
+    created: "2023-06-17T10:19:24.225441147+02:00"
     description: Rekeningrijden webapp for, you guessed it, rekeningrijden
     digest: e344c532981363e4db6893e1b64363b04d137c240bfd84d2b491474d27a38313
     name: rekeningrijden
@@ -129,7 +129,7 @@ entries:
   router-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-16T15:32:51.817232471+02:00"
+    created: "2023-06-17T10:19:24.22561951+02:00"
     description: Router api for rekeningrijden.
     digest: 94e1a81dd5939a4ad69b505287b536f6d6428bb9c9a6f3727bc81d8b965824ca
     name: router-api
@@ -150,7 +150,17 @@ entries:
   router-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-16T15:32:51.817404183+02:00"
+    created: "2023-06-17T10:19:24.22595909+02:00"
+    description: The Router Service for Rekeningrijden
+    digest: 19d54e2598d3f0925f9a2cfadc6dd07648e6f18b793ae08758a15c4adf6bd156
+    name: router-service
+    type: application
+    urls:
+    - https://groep2rekeningrijden.github.io/charts/docs/router-service-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-06-17T10:19:24.225780788+02:00"
     description: The Router Service for Rekeningrijden
     digest: 647b74f2a03025e675b1983f5fae01c674ec813d975962c296acb44723ab4392
     name: router-service
@@ -208,4 +218,4 @@ entries:
     urls:
     - https://groep2rekeningrijden.github.io/charts/docs/router-service-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-16T15:32:51.815727024+02:00"
+generated: "2023-06-17T10:19:24.224203377+02:00"
