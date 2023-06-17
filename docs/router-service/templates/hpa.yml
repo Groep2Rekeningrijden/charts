@@ -8,11 +8,11 @@ spec:
     kind: Deployment
     name: {{.Values.serviceName}}
   minReplicas: 1
-  maxReplicas: {{.Values.maxReplicas}}}
+  maxReplicas: {{.Values.maxReplicas}}
   metrics:
     - type: Resource
       resource:
         name: cpu
         target:
           type: Utilization
-          averageUtilization: 80
+          averageUtilization: "80"
