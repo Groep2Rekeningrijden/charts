@@ -35,4 +35,4 @@ rabbitmq:
 resources:
   memory: 2Gi
   cpu: 500m
-maxReplicas: "1"
+maxReplicas: 1
